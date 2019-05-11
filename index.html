@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<title>Ufery</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data/ico_uf.png" type="image/x-icon" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+  crossorigin="anonymous">
+<style>
+  body {
+    font-family: "Roboto", sans-serif
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  .mySlides {
+    display: none
+  }
+
+  .vid-info {
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    font-family: Avenir, Helvetica, sans-serif;
+  }
+
+  .vl {
+    border-left: 1px solid black;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+
+  }
+  .partnerSlides {
+    display: none
+  }
+  .demo {cursor:pointer}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+    jQuery(document).ready(function($) {
+        $('.counter').counterUp({
+            delay: 10,
+            time: 1000
+        });
+    });
+</script>
+</head>
+<body>
+  <div class="w3-sidebar w3-bar-block w3-black w3-xxlarge" style="right:-138px">
+    <a href="https://twitter.com/ufery_" target="_blank" class="w3-bar-item w3-button">
+      <i class="fab fa-twitter"></i>
+    </a>
+    <a href="https://doc.ufery.com" class="w3-bar-item w3-button">
+      <i class="fas fa-book"></i>
+    </a>
+    <a href="https://github.com/ufery" target="_blank" class="w3-bar-item w3-button">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://drive.google.com/drive/folders/19Sdc_mnO2Pj3AsD5G52_qQ4eSNFe3b9s?usp=sharing" target="_blank" class="w3-bar-item w3-button">
+      <i class="fab fa-google-drive"></i>
+    </a>
+    <a href="https://www.instagram.com/ufery_" target="_blank" class="w3-bar-item w3-button">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://vimeo.com/ufery" target="_blank" class="w3-bar-item w3-button">
+      <i class="fab fa-vimeo"></i>
+    </a>
+    <a href="https://ar.linkedin.com/in/ufery" target="_blank" class="w3-bar-item w3-button">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://www.facebook.com/ufery0" target="_blank" class="w3-bar-item w3-button">
+      <i class="fab fa-facebook"></i>
+    </a>
+    <a href="mailto:ufery@outlook.es" target="_top" class="w3-bar-item w3-button">
+      <i class="far fa-envelope"></i>
+    </a>
+  </div>
+
+  <!-- Navbar -->
+  <div class="w3-bottom">
+    <div class="w3-bar w3-black w3-card">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()"
+        title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large"><img src="data/ufery_w.png" style="max-width: 15px;"></a>
+      <a href="#aboutus" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT US</a>
+      <a href="#skills" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SKILLS</a>
+      <a href="#stats" class="w3-bar-item w3-button w3-padding-large w3-hide-small">STATS</a>
+      <a href="#project" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PROJECTS</a>
+      <a href="#team" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TEAM</a>
+      <a href="#partner" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PARTNER</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+      <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-padding-large w3-button" title="More">MORE
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4 w3-bottom" style="margin-bottom:46px; width: 80px">
+          <a href="#storage" class="w3-bar-item w3-button">STORAGE</a>
+        </div>
+      </div>
+      <a href="#" class="w3-padding-large w3-button w3-hide-small w3-right">
+        <i class="fas fa-chevron-up"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-bottom" style="margin-bottom:46px">
+    <a href="#aboutus" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT US</a>
+    <a href="#skills" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SKILLS</a>
+    <a href="#stats" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">STATS</a>
+  </div>
+
+  <!-- Page content -->
+  <div class="w3-content" style="max-width:2000px">
+
+    <!-- Automatic Slideshow Images -->
+    <div class="mySlides w3-display-container w3-center">
+      <img src="data/photo1.svg" style="width:100%">
+      <div class="w3-display-bottommiddle w3-container w3-text-white w3-hide-small vid-info" style="margin-bottom:130px">
+        <h3>	
+          Load Balance</h3>
+        <p>
+          <b>In values, principles and ideals.</b>
+        </p>
+      </div>
+    </div>
+    <div class="mySlides w3-display-container w3-center">
+      <img src="data/photo1_neg.svg" style="width:100%">
+      <div class="w3-display-bottommiddle w3-container w3-text-white w3-hide-small vid-info" style="margin-bottom:130px">
+        <h3>Load Balance</h3>
+        <p>
+          <b>In business, content and architecture.</b>
+        </p>
+      </div>
+    </div>
+    <div class="mySlides w3-display-container w3-center">
+      <img src="data/photo2.svg" style="width:100%">
+      <div class="w3-display-bottommiddle w3-container w3-text-white w3-hide-small vid-info" style="margin-bottom:130px">
+        <h3>Architecture</h3>
+        <p>
+          <b>In cloud, containers and distributed.</b>
+        </p>
+      </div>
+    </div>
+    <div class="mySlides w3-display-container w3-center">
+      <img src="data/photo2b.svg" style="width:100%">
+      <div class="w3-display-bottommiddle w3-container w3-text-white w3-hide-small vid-info" style="margin-bottom:130px">
+        <h3>Content</h3>
+        <p>
+          <b>In Persistence of data, Back-End and Layers </b>
+        </p>
+      </div>
+    </div>
+    <div class="mySlides w3-display-container w3-center">
+      <img src="data/photo2c.svg" style="width:100%">
+      <div class="w3-display-bottommiddle w3-container w3-text-white w3-hide-small vid-info" style="margin-bottom:130px">
+        <h3>Proyect Management</h3>
+        <p>
+          <b>In methodologies, models and tools </b>
+        </p>
+      </div>
+    </div>
+    <div class="mySlides w3-display-container w3-center">
+      <img src="data/photo3.svg" style="width:100%">
+      <div class="w3-display-bottommiddle w3-container w3-text-white w3-hide-small vid-info vid-info" style="margin-bottom:130px">
+        <h3>Digital Design</h3>
+        <p>
+          <b>In UX, UI, and CX</b>
+        </p>
+      </div>
+    </div>
+    <!-- The About us Section -->
+    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" >
+      <h2 class="w3-wide w3-center w3-padding-32" id="aboutus">ABOUT US</h2>
+      <p class="w3-opacity">
+        <i>We
+          <i class="fas fa-heart"></i> tecnology</i>
+      </p>
+      <p class="w3-center">A team dedicated to the development, innovation, research and invention of new technologies, created businesses of
+        rapid growth.</p>
+      <div class="w3-row w3-padding-32">
+        <div class="w3-third w3-container">
+          <p class="w3-wide">Who we are?</p>
+          <img src="data/quienes-somos.svg" class="w3-round w3-margin-bottom" style="width: 55px;height: 55px" alt="Random Name">
+          <p class="w3-right-align ">We are a software development team where our main skills are creativity, vision, realistic optimism, identification
+            and potentiation of our team in the organization.</p>
+        </div>
+
+        <div class=" w3-third w3-container ">
+          <hr class="vl">
+        </div>
+
+        <div class="w3-third w3-container">
+          <p class="w3-wide">What do we do?</p>
+          <img src="data/que-hacemos.svg" class="w3-round w3-margin-bottom" style="width: 55px;height: 55px" alt="Random Name">
+          <p class="w3-left-align">Software development, deployment of architectures and hardware.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- The SKILLS us Section -->
+    <div class="w3-black">
+    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" >
+      <h2 class="w3-wide w3-center w3-padding-32" id="skills">SKILLS</h2>
+      <p class="w3-opacity">
+        <i>We
+          <i class="fas fa-heart"></i> the new technologies</i>
+      </p>
+      <p class="w3-center">Skills of our development team and incorporation of new technologies.</p>
+      <div class="w3-row w3-padding-16">
+        <div class="w3-third w3-container">
+          <div class="w3-card w3-white">
+            <header class="w3-container">
+              <img src="data/frontend.svg" alt="FRONT - END">
+            </header>
+            <div class="w3-container">
+              <h4>FRONT - END</h4>
+              <hr>
+              <p>Html5
+                <br> CSS3
+                <br> JavaScript
+                <br> AngularJS
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="w3-third w3-container">
+          <div class="w3-card w3-white">
+            <header class="w3-container">
+              <img src="data/backend.svg" alt="BACK - END">
+            </header>
+            <div class="w3-container">
+              <h4>BACK - END</h4>
+              <hr>
+              <p>Java
+                <br>Microsoft .NET
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="w3-third w3-container">
+          <div class="w3-card w3-white">
+            <header class="w3-container">
+              <img src="data/database.svg" alt="PERSISTENCE OF DATA">
+            </header>
+            <div class="w3-container">
+              <h4>PERSISTENCE OF DATA</h4>
+              <hr>
+              <p>Mysql
+                <br>Sql Server</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w3-row w3-padding-16">
+        <div class="w3-third w3-container">
+          <div class="w3-card w3-white">
+            <header class="w3-container">
+              <img src="data/settings-gears.svg" style="max-width: 100%" alt="SOFTWARE PROCESS ADMINISTRATOR">
+            </header>
+            <div class="w3-container">
+              <h4>SOFTWARE PROJECT MANAGEMENT</h4>
+              <hr>
+              <p>Git
+                <br>Svn
+                <br>Docker</p>
+            </div>
+          </div>
+        </div>
+        <div class="w3-third w3-container">
+          <div class="w3-card w3-white">
+            <header class="w3-container">
+              <img src="data/layers.svg" alt="ARCHITECTURE">
+            </header>
+            <div class="w3-container">
+              <h4>ARCHITECTURE</h4>
+              <hr>
+              <p>Nginx
+                <br>Centos
+                <br>Digital Ocean
+                <br>Azure</p>
+            </div>
+          </div>
+        </div>
+        <div class="w3-third w3-container">
+          <div class="w3-card w3-white">
+            <header class="w3-container">
+              <img src="data/graphic-design.svg" alt="DIGITAL DESIGN">
+            </header>
+            <div class="w3-container">
+              <h4>DIGITAL DESIGN</h4>
+              <hr>
+              <p>PhotoShop
+                <br>Ilustrator
+                <br>Prototype XD</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- The stats us Section -->
+    <div class="w3-white">
+        <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+          <h2 class="w3-wide w3-center w3-padding-32" id="stats">STATS</h2>
+          <p class="w3-opacity w3-center">
+            <i>Our growth metrics!</i>
+          </p>
+          <br>
+          <div class="w3-row">
+            <div class="w3-col s2">
+              <img src="data/skills.svg" class="w3-round w3-margin-bottom" style="margin: 2px" alt="Random Name">
+              <h4 class="w3-center">SKILLS</h4>
+              <span class="w3-center counter">1,234,567</span>
+            </div>
+            <div class="w3-col s2">
+              <img src="data/project.svg" class="w3-round w3-margin-bottom" style="margin: 2px" alt="Random Name">
+              <h4 class="w3-center">PROYECTS</h4>
+              <span class="w3-center counter">31</span>
+            </div>
+            <div class="w3-col s2">
+              <img src="data/team.svg" class="w3-round w3-margin-bottom" style="margin: 2px" alt="Random Name">
+              <h4 class="w3-center">TEAM</h4>
+              <span class="w3-center counter">17</span>
+            </div>
+            <div class="w3-col s2">
+              <img src="data/partners.svg" class="w3-round w3-margin-bottom" style="margin: 2px" alt="Random Name">
+              <h4 class="w3-center">PARTNERTS</h4>
+              <span class="w3-center counter">3</span>
+            </div>
+            <div class="w3-col s2">
+              <img src="data/document.svg" class="w3-round w3-margin-bottom" style="margin: 2px" alt="Random Name">
+              <h4 class="w3-center">DOCUMENTS</h4>
+              <span class="w3-center counter">48</span>
+            </div>
+            <div class="w3-col s2">
+              <img src="data/task.svg" class="w3-round w3-margin-bottom" style="margin: 2px" alt="Random Name">
+              <h4 class="w3-center">TASK</h4>
+              <span class="w3-center counter">100</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- The PROJECT us Section -->
+    <div class="w3-black">
+      <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+        <h2 class="w3-wide w3-center w3-padding-32" id="project">PROJECTS</h2>
+        <p class="w3-center">Projects, prototypes and finished products or in development, sample and test the different resources available.</p>
+        <br>
+
+        <div class="w3-row">
+          <div class="w3-container w3-third">
+
+            <div class="w3-card-4 w3-white">
+              <header class="w3-container w3-light-grey">
+                <h3>Ufery</h3>
+              </header>
+              <div class="w3-container">
+                <p>An identity with a solid foundation</p>
+                <hr>
+                <img src="data/ufery.png" alt="Avatar" class="w3-left w3-margin-right" style="width:60px">
+                <p>Chief executive officer, founder,
+                    Master and
+                    product manager.</p>
+                <br>
+              </div>
+              <button class="w3-button w3-block w3-dark-grey" onclick="document.getElementById('connect_ufery').style.display='block'"><i class="fas fa-eye"></i> View</button>
+            </div>
+          </div>
+          <div class="w3-container w3-third w3-margin-bottom w3-medium">
+              <div class="w3-white"><img src="data/empty_proy.svg" alt="New York" style="width:100%" class="w3-hover-opacity"></div>
+
+          </div>
+          <div class="w3-container w3-third w3-margin-bottom w3-medium">
+            <div class="w3-white"><img src="data/empty_proy.svg" alt="New York" style="width:100%" class="w3-hover-opacity"></div>
+            
+          </div>
+
+        </div>
+        <!-- The Storage us Section -->
+        <div class="w3-container w3-content w3-padding-32" style="max-width:800px" >
+          <h3 class="w3-wide w3-center w3-padding-32" id="storage">STORAGE</h3>
+          <p class="w3-center">
+            Here will be stored the documentation, code resources and videos of the tests, of public projects.</p>
+          <br>
+          <div class="w3-row-padding w3-padding-16 w3-center" style="margin:0 -16px">
+            <div class="w3-quarter w3-margin-bottom w3-white">
+              <img src="data/closed-book-cover.svg" alt="New York" style="width:100%" class="w3-hover-opacity">
+              <div class="w3-container w3-white">
+                <p>
+                  <b>Documentation</b>
+                </p>
+                <span class="w3-opacity"><hr></span>
+                <p>Storage of documentation public</p>
+                <a href="https://doc.ufery.com" class="button w3-button w3-black w3-margin-bottom">Doc</a>
+              </div>
+            </div>
+            <div class="w3-quarter w3-margin-bottom w3-white">
+              <img src="data/githubs_logo.svg" alt="New York" style="width:100%" class="w3-hover-opacity">
+              <div class="w3-container w3-white">
+                <p>
+                  <b>Implementation</b>
+                </p>
+                <span class="w3-opacity"><hr></span>
+                <p>Storage Of Implementation public</p>
+                <a href="https://github.com/ufery" class="button w3-button w3-black w3-margin-bottom">Clone</a>
+              </div>
+            </div>
+            <div class="w3-quarter w3-margin-bottom w3-white">
+              <img src="data/google-drive.svg" alt="New York" style="width:100%" class="w3-hover-opacity">
+              <div class="w3-container w3-white">
+                <p>
+                  <b>Resources And Components</b>
+                </p>
+                <span class="w3-opacity"><hr></span>
+                <p>Storage of resources and components</p>
+                <a href="https://drive.google.com/drive/folders/19Sdc_mnO2Pj3AsD5G52_qQ4eSNFe3b9s?usp=sharing" class="button w3-button w3-black w3-margin-bottom">Use</a>
+              </div>
+            </div>
+            <div class="w3-quarter w3-margin-bottom w3-white">
+              <img src="data/vimeo-logo.svg" alt="New York" style="width:100%" class="w3-hover-opacity">
+              <div class="w3-container w3-white">
+                <p>
+                  <b>Testing</b>
+                </p>
+                <span class="w3-opacity"><hr></span>
+                <p>Staging of subsystems and software systems</p>
+                <a href="https://vimeo.com/ufery" class="button w3-button w3-black w3-margin-bottom">Test</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- The TEAM us Section -->
+    <div class="w3-container w3-content w3-padding-64 " style="max-width:800px" >
+      <h2 class="w3-wide w3-center w3-padding-32" id="team">TEAM</h2>
+      <p class="w3-opacity w3-center">
+        <i>Our development team, ready to give immediate response.</i>
+      </p>
+      <div class="w3-row w3-padding-32">
+        <div class="w3-quarter w3-margin-bottom w3-white w3-medium w3-center" style="max-width: 200px;">
+          <img src="data/henryeramos.png" alt="New York" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p>
+              <b>Henry Emir Ramos Calcina</b>
+            </p>
+            <p class="w3-opacity">Ufery - "Choose, run and do not look back"</p>
+            <p>Software development analyst</p>
+            <a href="https://www.twitter.com/henryeramos_" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/henryeramos" target="_blank"><i class="fab fa-facebook w3-hover-opacity"></i></a>
+            <a href="https://www.instagram.com/henryeramos" target="_blank"><i class="fab fa-instagram w3-hover-opacity"></i></a>
+            <a href="https://www.github.com/henryeramos" target="_blank"><i class="fab fa-github w3-hover-opacity"></i></a>
+            <a href="https://www.linkedin.com/in/henryeramos" target="_blank"><i class="fab fa-linkedin w3-hover-opacity"></i></a>
+            <a href="mailto:henryeramosar@outlook.com" target="_top"><i class="far fa-envelope w3-hover-opacity"></i></a>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('cv').style.display='block'">Perfil/cv</button>
+          </div>
+        </div>
+        <div class="w3-quarter w3-margin-bottom w3-white w3-medium w3-opacity" style="max-width: 200px;">
+            <img src="data/empty.svg" alt="New York" style="width:100%" class="w3-hover-opacity">
+        </div>
+        <div class="w3-quarter w3-margin-bottom w3-white w3-medium w3-opacity" style="max-width: 200px;">
+            <img src="data/empty.svg" alt="New York" style="width:100%" class="w3-hover-opacity">
+        </div>
+        <div class="w3-quarter w3-margin-bottom w3-white w3-medium w3-opacity" style="max-width: 200px;">
+            <img src="data/empty.svg" alt="New York" style="width:100%" class="w3-hover-opacity">
+        </div>
+      </div>
+    </div>
+    <!-- The Partner Section -->
+    <div class="w3-black">
+        <div class="w3-container w3-content w3-padding-64" style="max-width:800px" >
+          <h2 class="w3-wide w3-center w3-padding-32" id="partner">PARTNER</h2>
+          <p class="w3-opacity w3-center">
+            <i>Our clients and partners!</i>
+          </p>
+          <div class="w3-content" style="max-width:1200px">
+              <img class="partnerSlides" src="slides/img_slides_1.jpg" style="width:100%">
+              <img class="partnerSlides" src="slides/img_slides_2.jpg" style="width:100%">
+              <img class="partnerSlides" src="slides/img_slides_3.jpg" style="width:100%">
+            
+              <div class="w3-row-padding w3-section">
+                <div class="w3-col s4">
+                  <img class="demo w3-opacity w3-hover-opacity-off" src="slides/img_slides_1.jpg" style="width:100%" onclick="currentDiv(1)">
+                </div>
+                <div class="w3-col s4">
+                  <img class="demo w3-opacity w3-hover-opacity-off" src="slides/img_slides_2.jpg" style="width:100%" onclick="currentDiv(2)">
+                </div>
+                <div class="w3-col s4">
+                  <img class="demo w3-opacity w3-hover-opacity-off" src="slides/img_slides_3.jpg" style="width:100%" onclick="currentDiv(3)">
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    <!-- The Contact Section -->
+    <div class="w3-white">
+      <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+        <h2 class="w3-wide w3-center w3-padding-32" id="contact">CONTACT</h2>
+        <p class="w3-opacity w3-center">
+          <i>Fan? Subscriber? Follower? Client? Partner? Take note and follow me!</i>
+        </p>
+        <div class="w3-row w3-padding-32">
+          <div class="w3-col m6 w3-large w3-margin-bottom">
+            <i class="fas fa-map-marker-alt" style="width:30px"></i> Córdoba, Argentina
+            <button class="w3-button w3-white w3-margin-bottom" onclick="document.getElementById('map').style.display='block'">Where?</button>
+            <br>
+            <i class="fas fa-mobile-alt" style="width:30px"></i> Phone: +54 (351) 8180380
+            <br>
+            <i class="far fa-envelope" style="width:30px"> </i> Email: ufery@outlook.es
+            <br>
+          </div>
+          <div class="w3-col m6">
+            <form action="/action_page.php" target="_blank">
+              <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                <div class="w3-half">
+                  <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                </div>
+                <div class="w3-half">
+                  <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                </div>
+              </div>
+              <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+              <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+      <a href="https://www.twitter.com/ufery_" target="_blank"><i class="fab fa-twitter w3-hover-opacity"></i></a>
+      <a href="https://www.instagram.com/ufery_" target="_blank"><i class="fab fa-instagram w3-hover-opacity"></i></a>
+      <a href="https://www.linkedin.com/in/ufery" target="_blank"><i class="fab fa-linkedin w3-hover-opacity"></i></a>
+      <a href="https://www.facebook.com/ufery0" target="_blank"><i class="fab fa-facebook w3-hover-opacity"></i></a>
+      <a href="mailto:ufery@outlook.es" target="_top"><i class="far fa-envelope w3-hover-opacity"></i></a>
+      <p class="w3-medium">©
+        <a href="#" target="_blank">Ufery 2018</a>
+      </p>
+    </footer>
+
+    <!-- Curriculum Vitae -->
+  <div id="cv" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4" style="max-width: 1000px">
+      <header class="w3-container w3-black w3-center w3-padding-16"> 
+        <span onclick="document.getElementById('cv').style.display='none'" 
+       class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Curriculum Vitae</h2>
+      </header> 
+      <iframe src="profile-herc.html" style="height: 750px;width:900px;" ></iframe>
+    </div>
+   
+  </div>
+  <!-- Connect ufery -->
+  <div id="connect_ufery" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4" style="max-width: 400px">
+      <header class="w3-container w3-black w3-center w3-padding-32">
+        <span onclick="document.getElementById('connect_ufery').style.display='none'" class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+        <h2 class="w3-wide">
+          <img src="data/ufery_w.png" style="max-width: 30px;"> UFERY</h2>
+      </header>
+      <div class="w3-row">
+        <div class="w3-container">
+          <h5><strong>Values:</strong></h5>
+          <p>simple, clear, integrated.</p>
+          <h5><strong>Focus:</strong></h5>
+          <p>learn (L3 and ASP), produce, research, innovate, continuous improvement and quality.</p>
+          <h5><strong>Objective:</strong></h5>
+          <p>learn, teach and serve.</p>
+          <h5><strong>Mission:</strong></h5>
+          <p>liberation in thought and doing.</p>
+          <h5><strong>Vision:</strong></h5>
+          <p>fundamental basis of personal reference, education and systems.</p>
+          <h5><strong>Activities:</strong></h5>
+          <p>invent, innovate, investigate, engineer and invest.</p>
+          <button class="w3-button w3-black w3-section" onclick="document.getElementById('connect_ufery').style.display='none'">Close
+            <i class="fa fa-remove"></i>
+          </button>
+          <p class="w3-right">Need
+            <a href="#" class="w3-text-blue">help?</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- map -->
+  <div id="map" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-black w3-center w3-padding-32"> 
+        <span onclick="document.getElementById('map').style.display='none'" 
+       class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+        <h2 class="w3-wide"><i class="fas fa-map-marked-alt w3-margin-right"></i>MAP</h2>
+      </header>
+      <div class="w3-container">
+        <img class="w3-grayscale-max" style="height:400px " src="data/map.png">
+        <button class="w3-button w3-black w3-section" onclick="document.getElementById('map').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+      </div>
+    </div>
+  </div>
+
+    <script>
+      // Automatic Slideshow - change image every 4 seconds
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) { myIndex = 1 }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 4000);
+      }
+
+      // Used to toggle the menu on small screens when clicking on the menu button
+      function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+
+      // When the user clicks anywhere outside of the modal, close it
+      var modal = document.getElementById('cv');
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+    </script>
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function currentDiv(n) {
+          showDivs(slideIndex = n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("partnerSlides");
+          var dots = document.getElementsByClassName("demo");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+             dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+          }
+          x[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " w3-opacity-off";
+        }
+        </script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+</body>
+
+</html>

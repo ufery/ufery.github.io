@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<title>henryeramos - Profile</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+<style>
+  html,
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Roboto", sans-serif
+  }
+
+  .vid-info {
+    background: rgba(0, 0, 0, 0.562);
+    color: #fff;
+    font-family: Avenir, Helvetica, sans-serif;
+  }
+</style>
+
+<body class="w3-light-grey">
+
+  <!-- Page Container -->
+  <div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+    <!-- The Grid -->
+    <div class="w3-row-padding">
+
+      <!-- Left Column -->
+      <div class="w3-third">
+
+        <div class="w3-white w3-text-grey w3-card-4">
+          <div class="w3-display-container">
+            <img src="data/henryeramos.png" style="width:100%" alt="Avatar">
+            <div class="w3-display-bottomleft w3-container w3-text-black vid-info" style="width:100%">
+              <h4 style="color: white">Henry Emir Ramos Calcina</h4>
+            </div>
+          </div>
+          <div class="w3-container">
+            <p class="w3-large">
+              <b>
+                <i class="fas fa-building fa-fw  w3-xxlarge w3-text-black"></i>Role</b>
+            </p>
+            <div class="w3-container">
+              <p>
+                <i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-black"></i>Software Development Analyst</p>
+            </div>
+            <hr>
+            <p class="w3-large">
+              <b>
+                <i class="fa fa-address-card fa-fw  w3-xxlarge w3-text-black"></i>Contact</b>
+            </p>
+            <div class="w3-container">
+              <p>
+                <i class="fas fa-map-marker-alt fa-fw w3-margin-right w3-large w3-text-black"></i>Argentina, Córdoba</p>
+              <p>
+                <i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-black"></i>henryeramosar@outlook.com</p>
+              <p>
+                <i class="fas fa-mobile-alt fa-fw w3-margin-right w3-large w3-text-black"></i>+54 (351) 158080889</p>
+            </div>
+            <hr>
+            <p class="w3-large">
+              <b>
+                <i class="fas fa-user-circle fa-fw  w3-xxlarge w3-text-black"></i>Personal information</b>
+            </p>
+            <div class="w3-container">
+              <p>
+                <i class="fas fa-file-signature fa-fw w3-margin-right w3-large w3-text-black"></i>Name: Henry Emir Ramos Calcina</p>
+              <p>
+                <i class="fas fa-birthday-cake fa-fw w3-margin-right w3-large w3-text-black"></i>Birth: 08-28-1992</p>
+              <p>
+                <i class="fas fa-globe fa-fw w3-margin-right w3-large w3-text-black"></i>Citizenship: Argentina, Córdoba, Cordoba</p>
+              <p>
+                  <i class="fas fa-map-pin fa-fw w3-margin-right w3-large w3-text-black"></i>Address: 2149 Santa Rosa, Bº Alberdi.</p>
+              <p>
+                    <i class="far fa-heart fa-fw w3-margin-right w3-large w3-text-black"></i>Marital Status: Single</p>
+            </div>
+            <hr>
+            <p class="w3-large">
+              <b>
+                <i class="far fa-clock fa-fw  w3-xxlarge w3-text-black"></i>Objective</b>
+            </p>
+            <div class="w3-container">
+              <p>
+                <i class="fas fa-file-contract fa-fw w3-margin-right w3-large w3-text-black"></i>Learn, Produce, research and innovate</p>
+              <p>
+                <i class="fas fa-sync-alt fa-fw w3-margin-right w3-large w3-text-black"></i>Continuous Improvement and Quality</p>
+            </div>
+            <hr>
+            <p class="w3-large">
+              <b>
+                <i class="far fa-lightbulb fa-fw  w3-xxlarge w3-text-black"></i>Professional Skill</b>
+            </p>
+            <div class="w3-container">
+              <h6>BACK - END:</h6>
+              <p>java, C# .Net Framework, .Net Core, Node Js, Golang, Python</p>
+              <h6>FRAMEWORK: </h6>
+              <p>spring, struts2, Web APi, MVC ASP, Express Js, Revel and Echo</p>
+              <h6>SOFTWARE PROJECT MANAGEMENT:</h6>
+              <p>maven, gradle, git, jenkins, atlassian (jira, confluence, crucible, stash), Trello, gitlab, vsts, docker, Openshift, jetbrains - eclipse - visual studio</p>
+              <h6>AUTOMATION</h6>
+              <p>Bash, ShellScript, </p>
+              <h6>ARCHITECTURE:</h6>
+              <p>windows - linux (centos/ubuntu/fedora), aws, azure, digital ocean, glassfish,JBoss, WildFly, tomcat, Jetty, nginx/ apache - iis</p>
+              <h6>TESTING:</h6>
+              <p>junit, Jasmine, Mockito, Jmeter apache, charles / postman / swagger Soap UI</p>
+              <h6>DIGITAL DESIGN:</h6>
+              <p>photoshop ilustrator prototype xd</p>
+              <h6>SYSTEMS DEVELOPMENT METHODOLOGY:</h6>
+              <p>functional analyst - scrum - pud/rup</p>
+              <h6>PERSISTENCE OF DATA:</h6>
+              <p>mysql/maria db - sql server - pl sql - orm: entity framework and linq</p>
+              <h6>FRONT-END:</h6>
+              <p>html 5 - css - java script - Jquery - ajax - angular js - ui/ux/cx - razor .net </p>
+            </div>
+            <br>
+            <p class="w3-large">
+              <b>
+                <i class="fas fa-globe-americas fa-fw  w3-xxlarge w3-text-black"></i>Idiomas</b>
+            </p>
+            <p>Spanish</p>
+            <div class="w3-light-grey w3-round-xlarge">
+              <div class="w3-round-xlarge w3-black" style="height:24px;width:100%"></div>
+            </div>
+            <p>English</p>
+            <div class="w3-light-grey w3-round-xlarge">
+              <div class="w3-round-xlarge w3-black" style="height:24px;width:50%"></div>
+            </div>
+            <br>
+          </div>
+        </div>
+        <br>
+
+        <!-- End Left Column -->
+      </div>
+
+      <!-- Right Column -->
+      <div class="w3-twothird">
+
+        <div class="w3-container w3-card w3-white w3-margin-bottom">
+          <h2 class="w3-text-grey w3-padding-16">
+            <i class="fas fa-handshake fa-fw w3-margin-right w3-xxlarge w3-text-black"></i>Work Experience</h2>
+          <div class="w3-container">
+            <h5 class="w3-opacity">
+              <b>Software developer analyst / Telecom</b>
+            </h5>
+            <h6 class="w3-text-black">
+              <i class="fas fa-calendar-alt fa-fw w3-margin-right"></i>Oct 2018 - 
+              <span class="w3-tag w3-black w3-round">Current</span>
+            </h6>
+            <p>Supplier - TELECOM Argentina S.A - Area: Gerencia de Integraciones de Aplicaciones|Desarrollo Sistemas Wireless y Aplicaciones Clientes | DTI | Gerencia de Sistemas WEB y V.A.S | Arquitectura y Evolución Tecnologica | IT </p>
+            <hr>
+          </div>
+          <div class="w3-container">
+            <h5 class="w3-opacity">
+              <b>Software developer analyst / Epidata</b>
+            </h5>
+            <h6 class="w3-text-black">
+              <i class="fas fa-calendar-alt fa-fw w3-margin-right"></i>Oct 2018 - 
+              <span class="w3-tag w3-black w3-round">Current</span>
+            </h6>
+            <p>Dependence Relationship - Epidata S.A - Unidad Operativa: Digital Innovation</p>
+            <hr>
+          </div>
+	  <div class="w3-container">
+            <h5 class="w3-opacity">
+              <b>Java developer analyst / Claro</b>
+            </h5>
+            <h6 class="w3-text-black">
+              <i class="fas fa-calendar-alt fa-fw w3-margin-right"></i>Aug 2016 - Sep 2018
+            </h6>
+            <p>Dependence Relationship - Vates - Area: E-commerce</p>
+            <hr>
+          </div>
+          <div class="w3-container">
+            <h5 class="w3-opacity">
+              <b>.NET developer analyst / Arcor</b>
+            </h5>
+            <h6 class="w3-text-black">
+              <i class="fas fa-calendar-alt fa-fw w3-margin-right"></i>Aug 2017 - Oct 2017</h6>
+            <p>freelance - autocad industrial documents management - Entry: Teacher Utn frc - Technological Migration.</p>
+            <hr>
+          </div>
+          <div class="w3-container">
+            <h5 class="w3-opacity">
+              <b>Java developer / Start up - Emprendimiento Tecnologico Iniciativa Fide</b>
+            </h5>
+            <h6 class="w3-text-black">
+              <i class="fas fa-calendar-alt fa-fw w3-margin-right"></i>Oct 2016 - Dic 2016</h6>
+            <p>remote - web product search engine - scraping java </p>
+            <br>
+          </div>
+        </div>
+
+        <div class="w3-container w3-card w3-white">
+          <h2 class="w3-text-grey w3-padding-16">
+            <i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-black"></i>Education</h2>
+          <div class="w3-container">
+            <h5 class="w3-opacity">
+              <b>UTN - Facultad Regional Cordoba</b>
+            </h5>
+            <h6 class="w3-text-black">
+              <i class="fas fa-calendar-alt fa-fw w3-margin-right"></i><span class="w3-tag w3-black w3-round">Current</span></h6>
+            <p>College - Ingeniería en Sistemas de Información. 4to año.</p>
+            <hr>
+          </div>
+          <div class="w3-container">
+            <h5 class="w3-opacity">
+              <b>Instituto salesiano Pio X</b>
+            </h5>
+            <h6 class="w3-text-black">
+              <i class="fas fa-calendar-alt fa-fw w3-margin-right"></i>2005 - 2010</h6>
+            <p>High School - Bachillerato orientado en economía y
+              gestión de las organizaciones.
+              Especialidad: gestión administrativa.</p>
+            <hr>
+          </div>
+        </div>
+
+        <br>
+        <div class="w3-container w3-card w3-white">
+          <h2 class="w3-text-grey w3-padding-16">
+            <i class="fa fa-bolt fa-fw w3-margin-right w3-xxlarge w3-text-black"></i>Realized courses</h2>
+          <div class="w3-container">
+            <h5 class="w3-opacity">
+              <b>management in the improvement of processes</b>
+            </h5>
+            <h6 class="w3-text-black">
+              <i class="fas fa-calendar-alt fa-fw w3-margin-right"></i>Mar 2016 - Jun 2016</h6>
+            <p>UTN - Facultad Regional Cordoba</p>
+            <hr>
+          </div>
+          <div class="w3-container">
+            <h5 class="w3-opacity">
+              <b>ENGLISH - LEVEL INTERMEDIUM ORAL/ESCRITURA</b>
+            </h5>
+            <h6 class="w3-text-black">
+              <i class="fas fa-calendar-alt fa-fw w3-margin-right"></i>2010 - 2013</h6>
+            <p>Departamento cultural Av. Vélez Sársfield 187</p>
+            <hr>
+          </div>
+          <div class="w3-container">
+            <h5 class="w3-opacity">
+              <b>PL/SQL Y ORACLE FORMS - MICRO STRATEGY</b>
+            </h5>
+            <h6 class="w3-text-black">
+              <i class="fas fa-calendar-alt fa-fw w3-margin-right"></i>Aug 2016 - Oct 2016</h6>
+            <p>Empresa Vates</p>
+            <br>
+          </div>
+          <div class="w3-container">
+            <h5 class="w3-opacity">
+              <b>JAVA Y FUNDAMENTOS DE LA PROGRAMACIÓN</b>
+            </h5>
+            <h6 class="w3-text-black">
+              <i class="fas fa-calendar-alt fa-fw w3-margin-right"></i>Mar 2015 - Jul 2015</h6>
+            <p>UTN - Facultad Regional Cordoba</p>
+            <br>
+          </div>
+          <div class="w3-container">
+            <h5 class="w3-opacity">
+              <b>VERTICAL - BIG DATA</b>
+            </h5>
+            <h6 class="w3-text-black">
+              <i class="fas fa-calendar-alt fa-fw w3-margin-right"></i>Apr 2016</h6>
+            <p>UTN - Facultad Regional Cordoba</p>
+            <br>
+          </div>
+          <div class="w3-container">
+            <h5 class="w3-opacity">
+              <b>OPERADOR INFORMATICO DE APLICACIONES OFFICE Y BASE DE DATOS ACCESS AVANZADO</b>
+            </h5>
+            <h6 class="w3-text-black">
+              <i class="fas fa-calendar-alt fa-fw w3-margin-right"></i>2010</h6>
+            <p>Consejo Profesional de Ciencias Informáticas de la Provincia Córdoba</p>
+            <br>
+          </div>
+        </div>
+
+        <!-- End Right Column -->
+      </div>
+
+      <!-- End Grid -->
+    </div>
+
+    <!-- End Page Container -->
+  </div>
+
+  <footer class="w3-container w3-black w3-center w3-margin-top">
+    <p>"Choose, run and do not look back".</p>
+    <a href="https://www.twitter.com/henryeramos_" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.facebook.com/henryeramos" target="_blank"><i class="fab fa-facebook w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/henryeramos" target="_blank"><i class="fab fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://www.github.com/henryeramos" target="_blank"><i class="fab fa-github w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/in/henryeramos" target="_blank"><i class="fab fa-linkedin w3-hover-opacity"></i></a>
+    <a href="mailto:henryeramosar@outlook.com" target="_top"><i class="far fa-envelope w3-hover-opacity"></i></a>
+    <p>
+      <a href="#" target="_blank">@henryeramos</a>™
+    </p>
+    <p class="w3-right">Need
+      <a href="#" class="w3-text-blue">help?</a>
+    </p>
+  </footer>
+
+</body>
+
+</html>
